@@ -1,0 +1,12 @@
+Pyrogram
+Pillow
+exif
+TgCrypto
+TGSessionsConverter
+random-username
+russian-names
+pymorphy2
+advertools
+phonenumbers
+nocodb
+PyDrive2
