@@ -84,14 +84,14 @@ class sender():
           if 'https://t.me/' in group:
             await app.join_chat(group)
             print (f'joined {group}')
-            await asyncio.sleep(60)
+            await asyncio.sleep(180)
             break
           else:
             chat = await app.get_chat(group)
             if chat.type == enums.ChatType.GROUP or chat.type == enums.ChatType.SUPERGROUP:
               await app.join_chat(group)
               print (f'joined {group}')
-              await asyncio.sleep(60)
+              await asyncio.sleep(180)
             break
         except UsernameNotOccupied as e:
           print (e)
@@ -102,7 +102,7 @@ class sender():
           continue
         except InviteRequestSent as e:
           print (f'joined {group}')
-          await asyncio.sleep(60)
+          await asyncio.sleep(180)
           break
         except UsernameInvalid as e:
           print (e)
